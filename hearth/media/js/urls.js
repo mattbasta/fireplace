@@ -2,6 +2,7 @@ define('urls', ['views'], function(views) {
 
     var api_endpoints = {
         'homepage': '/homepage',
+        'search': '/search',
         'app': '/app/{0}',
         'ratings': '/app/{0}/ratings',
         'abuse': '/app/{0}/report',
@@ -12,6 +13,10 @@ define('urls', ['views'], function(views) {
     var api = _.memoize(function(endpoint, args) {
         return settings.api_url + format(api_endpoints[endpoint], args || []);
     });
+
+    var apiParams = function(endpoint, params) {
+        return urlparams(api(endpoint), params);
+    };
 
     var group_pattern = /\(.+\)/;
     var reverse = function(view_name, args) {
@@ -48,6 +53,7 @@ define('urls', ['views'], function(views) {
 
     return {
         api: api,
+        apiParams: apiParams,
         reverse: reverse
     };
 });

@@ -54,7 +54,18 @@
             return null;
         }
 
+        function build(view, args, params) {
+            var bobj = builder.getBuilder();
+            view(bobj, args, getVars(), params);
+
+            // If there were no requests, the page is ready immediately.
+            bobj.finish();
+
+            return bobj;
+        }
+
         return {
+            build: build,
             match: match_route,
             routes: routes
         };

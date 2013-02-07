@@ -21,7 +21,6 @@ define('builder', ['helpers', 'models', 'z'], function(helpers, models, z) {
                 function(part_data) {
                     var d = {this: part_data};
                     mixin(d, helpers);
-                    console.log(d);
                     return nunjucks.env.getTemplate(template).render(d);
                 }
             ).join('');
@@ -78,13 +77,22 @@ define('builder', ['helpers', 'models', 'z'], function(helpers, models, z) {
                     applyTemplate(settings.fragment_error_template, {}));
             });
 
-            ret.dest = function(selector, template) {
-                prepElements(z.page.find(selector));
+            function writeSingle(method) {
+                return function(selector, template, pluck) {
+                    prepElements(z.page.find(selector));
 
-                return fetcher.done(function(data) {
-                    matched_elements.html(applyTemplate(template, data));
-                });
-            };
+                    return fetcher.done(function(data) {
+                        if (pluck !== undefined) {
+                            data = data[pluck];
+                        }
+                        matched_elements[method](applyTemplate(template, data));
+                    });
+                };
+            }
+
+            ret.dest = writeSingle('html');
+            ret.append = writeSingle('append');
+            ret.prepend = writeSingle('prepend');
 
             ret.as = function(type) {
                 var cast_model = models(type);
@@ -119,6 +127,10 @@ define('builder', ['helpers', 'models', 'z'], function(helpers, models, z) {
                         // reviewer name, etc.).
                         if ('pluck' in part) {
                             part_data = part_data[part.pluck];
+                        }
+
+                        if (part_data === null || part_data === undefined) {
+                            return;
                         }
 
                         // If part of the data is going into `z`, this will do
