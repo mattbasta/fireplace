@@ -80,13 +80,13 @@
 
   var translations = {
     'offline-message': {
-      'cs': 'Omlouváme se, ale pro přístup k Marketplace musíte být online.',
+      'cs': 'Omlouváme se, ale pro přístup k Danger Zone musíte být online.',
       'de': 'Es tut uns Leid, Sie müssen online sein, um auf den Marktplatz zugreifen zu können.',
-      'es': 'Disculpa, debes tener una conexión a internet para acceder al Marketplace.',
-      'fr': 'Désolé, vous devez être en ligne pour accéder au Marketplace.',
-      'it': 'Devi essere in linea per accedere al Marketplace.',
-      'pl': 'Przepraszamy, musisz być online, by mieć dostęp do Marketplace.',
-      'pt-BR': 'Lamentamos, mas você precisa estar on-line para acessar o Marketplace.'
+      'es': 'Disculpa, debes tener una conexión a internet para acceder al Danger Zone.',
+      'fr': 'Désolé, vous devez être en ligne pour accéder au Danger Zone.',
+      'it': 'Devi essere in linea per accedere al Danger Zone.',
+      'pl': 'Przepraszamy, musisz być online, by mieć dostęp do Danger Zone.',
+      'pt-BR': 'Lamentamos, mas você precisa estar on-line para acessar o Danger Zone.'
     },
     'try-again': {
       'cs': 'Zkusit znovu',

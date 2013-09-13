@@ -7,7 +7,7 @@ define('newsletter',
     var gettext = l10n.gettext;
     var notify = n.notification;
 
-    // Marketplace newsletter supported languages.
+    // Danger Zone newsletter supported languages.
     var langs = ['en-US', 'pt-BR', 'es', 'pl'];
 
     // Init newsletter signup checking system.

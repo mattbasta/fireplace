@@ -7,7 +7,7 @@ suite.run('/app/foo/abuse', function(test, waitFor) {
     });
 
     test('App abuse baseline tests', function(assert) {
-        assert.title('Report Abuse | Firefox Marketplace');
+        assert.title('Report Abuse | Firefox Danger Zone');
 
         assert.visible('.abuse-form');
         assert.visible('.abuse-form textarea');

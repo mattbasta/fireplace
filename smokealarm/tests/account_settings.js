@@ -15,7 +15,7 @@ suite.run('/', function(test, waitFor) {
         assert.URL(/\/settings/);
 
         suite.capture('account_settings_logged_out.png');
-        assert.title('Account Settings | Firefox Marketplace');
+        assert.title('Account Settings | Firefox Danger Zone');
 
         assert.visible('.account-settings .persona');
         assert.text('.account-settings .persona', 'Sign In / Sign Up');
@@ -33,7 +33,7 @@ suite.run('/', function(test, waitFor) {
         assert.URL(/\/settings/);
 
         suite.capture('account_settings_logged_in.png');
-        assert.title('Account Settings | Firefox Marketplace');
+        assert.title('Account Settings | Firefox Danger Zone');
 
         assert.visible('.account-settings .logout');
         assert.text('.account-settings .logout', 'Sign Out');

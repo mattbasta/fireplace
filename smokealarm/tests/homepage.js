@@ -7,7 +7,7 @@ suite.run('/', function(test, waitFor) {
     });
 
     test('Homepage baseline tests', function(assert) {
-        assert.title('Firefox Marketplace');
+        assert.title('Firefox Danger Zone');
 
         assert.visible('.wordmark');
         assert.visible('.header-button.settings');  // Persona not visible at mobile width :O

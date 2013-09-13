@@ -1,6 +1,6 @@
 # Fireplace
 
-Fireplace is a packaged version of the Firefox Marketplace's front-end.
+Fireplace is a packaged version of the Firefox Danger Zone's front-end.
 
 [![Build Status](https://travis-ci.org/mozilla/fireplace.png?branch=master)](https://travis-ci.org/mozilla/fireplace)
 
@@ -15,13 +15,13 @@ Fireplace is a packaged version of the Firefox Marketplace's front-end.
   <dd>A node.js server that serves a browser-friendly version of Fireplace</dd>
 
   <dt><a href="https://github.com/mozilla/flue">Flue</a></dt>
-  <dd>A mocked-out version of the Marketplace API.</dd>
+  <dd>A mocked-out version of the Danger Zone API.</dd>
 
   <dt>Hearth</dt>
   <dd>The source code for Fireplace.</dd>
 
   <dt>Inferno</dt>
-  <dd>A build server which generates a packaged version of the Marketplace.</dd>
+  <dd>A build server which generates a packaged version of the Danger Zone.</dd>
 
   <dt>Smoke Alarm</dt>
   <dd>A functional test runner for great justice.</dd>

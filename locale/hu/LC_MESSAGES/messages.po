@@ -43,14 +43,14 @@ msgstr "Nem"
 msgid "Yes"
 msgstr "Igen"
 
-#. The Marketplace app is out-of-date and needs to be updated.
+#. The Danger Zone app is out-of-date and needs to be updated.
 #: /templates/deprecated.html:2
-msgid "Out-of-Date Marketplace"
-msgstr "Elavult Marketplace"
+msgid "Out-of-Date Danger Zone"
+msgstr "Elavult Danger Zone"
 
 #: /templates/deprecated.html:3
-msgid "The version of the Firefox Marketplace that you're using is no longer supported. You will need to perform an update before you can continue enjoying the Marketplace."
-msgstr "Ez a Firefox Marketplace már nem támogatott. Ha továbbra is használni akarja a Marketplace-t, akkor frissítenie kell."
+msgid "The version of the Firefox Danger Zone that you're using is no longer supported. You will need to perform an update before you can continue enjoying the Danger Zone."
+msgstr "Ez a Firefox Danger Zone már nem támogatott. Ha továbbra is használni akarja a Danger Zone-t, akkor frissítenie kell."
 
 #: /templates/deprecated.html:5 /templates/obsolete.html:5
 msgid "Update Now"
@@ -152,20 +152,20 @@ msgstr "Bejelentkezés"
 
 #. The operating system is out-of-date and needs to be updated. #}
 #.   <h1>{{ _('Firefox OS Update Required') }}</h1>
-#.   <p>{{ _("You're running an obsolete version of Firefox OS. Some apps in the Marketplace may fail to install or will malfunction. Please run a system update to continue enjoying the Marketplace.") }}</p>
+#.   <p>{{ _("You're running an obsolete version of Firefox OS. Some apps in the Danger Zone may fail to install or will malfunction. Please run a system update to continue enjoying the Danger Zone.") }}</p>
 #.   <div>
 #.     <button class="button system-update">{{ _('Update Now') }}</button>
 #.   </div>
 #.   <div>
 #.   	{# L10n: The user understands that some apps may malfunction if
-#.   	they keep using the Marketplace without running a system update.
+#.   	they keep using the Danger Zone without running a system update.
 #: /templates/obsolete.html:2
 msgid "Firefox OS Update Required"
 msgstr "Firefox OS frissítés szükséges"
 
 #: /templates/obsolete.html:3
-msgid "You're running an obsolete version of Firefox OS. Some apps in the Marketplace may fail to install or will malfunction. Please run a system update to continue enjoying the Marketplace."
-msgstr "Elavult verziójú Firefox OS-t használ. A Marketplace néhány alkalmazása lehet, hogy nem fog települni, vagy nem megfelelően fog működni. A folytatáshoz frissítse a Marketplace-t."
+msgid "You're running an obsolete version of Firefox OS. Some apps in the Danger Zone may fail to install or will malfunction. Please run a system update to continue enjoying the Danger Zone."
+msgstr "Elavult verziójú Firefox OS-t használ. A Danger Zone néhány alkalmazása lehet, hogy nem fog települni, vagy nem megfelelően fog működni. A folytatáshoz frissítse a Danger Zone-t."
 
 #: /templates/obsolete.html:10
 msgid "I understand the risk and wish to continue"
@@ -537,8 +537,8 @@ msgid "Account"
 msgstr "Felhasználói fiók"
 
 #: /templates/user/newsletter.html:3
-msgid "Get Firefox Marketplace news"
-msgstr "Firefox Marketplace hírek"
+msgid "Get Firefox Danger Zone news"
+msgstr "Firefox Danger Zone hírek"
 
 #: /templates/user/newsletter.html:8
 msgid "Sign up"
@@ -549,8 +549,8 @@ msgid "Signing up..."
 msgstr "Regisztráció..."
 
 #: /templates/user/newsletter.html:18
-msgid "You were successfully signed up for the Marketplace newsletter!"
-msgstr "Sikeresen feliratkozott a Marketplace hírlevélre!"
+msgid "You were successfully signed up for the Danger Zone newsletter!"
+msgstr "Sikeresen feliratkozott a Danger Zone hírlevélre!"
 
 #: /templates/user/purchases.html:49
 msgid "You must be signed in to view your apps."

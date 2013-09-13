@@ -6,7 +6,7 @@
         "marketplace-app-rating": {"href": "/index.html"}
     },
     "default_locale": "en-US",
-    "description": "Firefox Marketplace",
+    "description": "Firefox Danger Zone",
     "developer": {
         "name": "Mozilla",
         "url": "http://mozilla.org"
@@ -30,7 +30,7 @@
         "pl": {},
         "zh-TW": {}
     },
-    "name": "Marketplace",
+    "name": "Danger Zone",
     "orientation": ["portrait-primary"],
     "permissions": {
         "mobilenetwork": {"description": "To detect mobile carrier and regional information."}
